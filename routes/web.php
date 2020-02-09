@@ -14,3 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::post('/user/reg','User\UserController@reg');
+Route::post('/user/login','User\UserController@login');
+Route::post('/user/getuserinfo','User\UserController@getuserinfo');
+Route::post('/user/gettoken','User\UserController@gettoken');
+Route::post('/test/github','User\UserController@github');//
+
+Route::post('/test/check2','TestController@check2');//验证签名
+
